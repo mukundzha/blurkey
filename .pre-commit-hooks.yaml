@@ -1,0 +1,7 @@
+- id: blurkey-check
+  name: blurkey check for leaked secrets in images
+  description: Fail if screenshots/GIFs contain API keys, emails or IPs
+  entry: blurkey --check
+  language: python
+  types: [png, jpeg, gif]
+  require_serial: false
